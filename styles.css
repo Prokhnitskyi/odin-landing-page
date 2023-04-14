@@ -1,0 +1,35 @@
+:root {
+    --main-font-size: 16px;
+    --background-color: #1F2937;
+    --quote-background-color: #E5E7EB;
+    --accent-color: #3882F6;
+    --main-text-color: #F9FAF8;
+    --secondary-text-color: #E5E7EB;
+    --alternate-text-color: #1F2937;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: var(--main-font-size);
+    font-family: Roboto, system-ui;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--main-text-color);
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    display: flex;
+    flex-direction: column;
+}

@@ -3,69 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>Odin Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-<header class="header">
-    <img src="" alt="Header logo">
-    <nav class="header__menu">
-        <ul>
-            <li><a href="#">header link one</a></li>
-            <li><a href="#">header link two</a></li>
-            <li><a href="#">header link three</a></li>
-        </ul>
-    </nav>
-</header>
-<section class="hero-section">
-    <div class="hero-section__menu-wrapper">
-        <h1>This website is awesome</h1>
-        <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower
-            contrast</p>
-        <button>Sign up</button>
-    </div>
-    <img src="" alt="Hero image">
-</section>
-<section class="image-set-section">
-    <h2>Some random information.</h2>
-    <div class="image-set">
-        <div class="image-set__item">
-            <img src="" alt="" class="image-set__image">
-            <p class="image-set__description">this is some subtext under an illustration or image</p>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__logo">Header Logo</div>
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li><a href="#">header link one</a></li>
+                <li><a href="#">header link two</a></li>
+                <li><a href="#">header link three</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <div class="hero-section__menu-wrapper">
+            <h1>This website is awesome</h1>
+            <p class="hero-section__description">This website has some subtext that goes here under the main title. It's
+                a smaller font and the color is lower
+                contrast</p>
+            <button class="button">Sign up</button>
         </div>
-        <div class="image-set__item">
-            <img src="" alt="" class="image-set__image">
-            <p class="image-set__description">this is some subtext under an illustration or image</p>
+        <img src="" alt="Hero image">
+    </section>
+    <section class="image-set-section">
+        <h2>Some random information.</h2>
+        <div class="image-set">
+            <div class="image-set__item">
+                <img src="" alt="" class="image-set__image">
+                <p class="image-set__description">this is some subtext under an illustration or image</p>
+            </div>
+            <div class="image-set__item">
+                <img src="" alt="" class="image-set__image">
+                <p class="image-set__description">this is some subtext under an illustration or image</p>
+            </div>
+            <div class="image-set__item">
+                <img src="" alt="" class="image-set__image">
+                <p class="image-set__description">this is some subtext under an illustration or image</p>
+            </div>
+            <div class="image-set__item">
+                <img src="" alt="" class="image-set__image">
+                <p class="image-set__description">this is some subtext under an illustration or image</p>
+            </div>
         </div>
-        <div class="image-set__item">
-            <img src="" alt="" class="image-set__image">
-            <p class="image-set__description">this is some subtext under an illustration or image</p>
+    </section>
+    <section class="quote-section">
+        <figure>
+            <blockquote cite="#">
+                <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or
+                    maybe
+                    people will actually read it. Who knows? All I know
+                    is that it looks nice.</p>
+            </blockquote>
+            <figcaption>—-Thor, God of Thunder, <cite>work name</cite></figcaption>
+        </figure>
+    </section>
+    <section class="sign-up-section">
+        <div class="sign-up-description">
+            <h3>Call to action! It's time!</h3>
+            <p>Sign up for our product by clicking that button right over there!</p>
         </div>
-        <div class="image-set__item">
-            <img src="" alt="" class="image-set__image">
-            <p class="image-set__description">this is some subtext under an illustration or image</p>
-        </div>
-    </div>
-</section>
-<section class="quote-section">
-    <figure>
-        <blockquote cite="#">
-            <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe
-                people will actually read it. Who knows? All I know
-                is that it looks nice.</p>
-        </blockquote>
-        <figcaption>—-Thor, God of Thunder, <cite>work name</cite></figcaption>
-    </figure>
-</section>
-<section class="sign-up-section">
-    <div class="sign-up-description">
-        <h3>Call to action! It's time!</h3>
-        <p>Sign up for our product by clicking that button right over there!</p>
-    </div>
-    <form action="" method="post" class="sign-up-form">
-        <button type="submit" class="sign-up-form__button">Sign up</button>
-    </form>
-</section>
-<footer>
-    <small>Copyright @ The Odin Project 2021</small>
-</footer>
+        <form action="" method="post" class="sign-up-form">
+            <button type="submit" class="button sign-up-form__button">Sign up</button>
+        </form>
+    </section>
+    <footer>
+        <small>Copyright @ The Odin Project 2021</small>
+    </footer>
+</div>
 </body>
 </html>
