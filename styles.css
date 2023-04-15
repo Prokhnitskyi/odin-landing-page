@@ -81,6 +81,7 @@ p {
 
 .header__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
 
@@ -91,19 +92,20 @@ p {
 
 .header__link {
     font-size: 1.125rem;
+    flex: 1 1 auto;
 }
 
 .hero-section {
     min-height: 440px;
     display: flex;
-    /*flex-wrap: wrap;*/
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    column-gap: 50px;
+    gap: 50px;
 }
 
-.hero-section__menu-wrapper {
-    flex: 0 1 445px;
+.hero-section__text-wrapper {
+    flex: 1 1 445px;
     min-width: 320px;
 }
 
@@ -113,9 +115,11 @@ p {
 }
 
 .hero-section__image {
-    flex: 0 0 520px;
+    flex: 1 1 520px;
+    min-width: 320px;
     height: 240px;
     object-fit: cover;
+    margin-bottom: 20px;
 }
 
 .button {
