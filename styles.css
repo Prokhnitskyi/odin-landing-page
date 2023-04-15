@@ -23,6 +23,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--background-color);
 }
 
 header, section, footer {
@@ -62,6 +63,7 @@ p {
 .page-width-wrap {
     background-color: var(--background-color);
     color: var(--main-text-color);
+    padding: 0 20px;
 }
 
 .page-width-wrap--white {
@@ -72,6 +74,7 @@ p {
 .page-width-wrap--quote {
     background: var(--quote-background-color);
     color: var(--alternate-text-color);
+    padding: 20px 0;
 }
 
 .header {
