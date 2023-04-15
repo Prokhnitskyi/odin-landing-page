@@ -234,3 +234,14 @@ p {
 .button--alt {
     border: 2px solid #FFF;
 }
+
+.footer {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer small {
+    font-size: 1rem;
+}
