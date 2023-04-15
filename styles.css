@@ -37,6 +37,13 @@ h1 {
     margin-bottom: 10px;
 }
 
+h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 a, a:visited {
     text-decoration: none;
     color: var(--secondary-text-color);
@@ -201,4 +208,29 @@ p {
     text-align: right;
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+.sign-up-section {
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action {
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 150px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: var(--accent-color);
+    color: var(--main-text-color);
+}
+
+.button--alt {
+    border: 2px solid #FFF;
 }
