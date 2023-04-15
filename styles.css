@@ -10,7 +10,6 @@
 
 * {
     box-sizing: border-box;
-    overflow-x: hidden; /*TEMP*/
 }
 
 html {
@@ -22,10 +21,12 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header, section, footer {
-    max-width: 1000px;
+    max-width: 1020px;
     margin: 0 auto;
 }
 
@@ -33,12 +34,22 @@ h1 {
     font-size: 3rem;
     font-weight: bolder;
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
 
 a, a:visited {
     text-decoration: none;
     color: var(--secondary-text-color);
+}
+
+figure, blockquote, figcaption {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin-top: 0;
 }
 
 .page-width-wrap {
@@ -48,6 +59,11 @@ a, a:visited {
 
 .page-width-wrap--white {
     background-color: #fff;
+    color: var(--alternate-text-color);
+}
+
+.page-width-wrap--quote {
+    background: var(--quote-background-color);
     color: var(--alternate-text-color);
 }
 
@@ -78,7 +94,7 @@ a, a:visited {
 }
 
 .hero-section {
-    min-height: 450px;
+    min-height: 440px;
     display: flex;
     /*flex-wrap: wrap;*/
     justify-content: space-between;
@@ -153,7 +169,32 @@ a, a:visited {
 }
 
 .image-set__description {
-    margin-top: 0;
     padding: 0 4px;
     text-align: center;
+}
+
+.quote-section {
+    min-height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    flex: 0 1 800px;
+    padding: 0 20px;
+}
+
+.quote__block p {
+    padding: 0;
+    margin: 0 0 1rem 0;
+    font-size: 2.25rem;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.quote__caption {
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
