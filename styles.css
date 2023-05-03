@@ -125,7 +125,6 @@ p {
 
 .hero-section__image {
     flex: 1 1 520px;
-    min-width: 320px;
     height: 240px;
     object-fit: cover;
     margin-bottom: 20px;
