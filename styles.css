@@ -116,7 +116,6 @@ p {
 
 .hero-section__text-wrapper {
     flex: 1 1 445px;
-    min-width: 320px;
 }
 
 .hero-section__description {
